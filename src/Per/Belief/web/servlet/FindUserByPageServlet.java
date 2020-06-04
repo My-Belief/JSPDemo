@@ -40,7 +40,7 @@ public class FindUserByPageServlet extends HttpServlet {
         UserService service = new UserServiceImpl();
         PageBean<User> pb = service.findUserByPage(currentPage,rows,condition);
 
-        System.out.println(pb);
+        //System.out.println(pb);
 
         //3.将PageBean存入request
         request.setAttribute("pb",pb);
